@@ -6,4 +6,4 @@ Horiseon focuses on search engine optimization, online reputation management and
 
 This site has been modified to meet all accessibility criteria. This is done by adding alt text to images that might not show for all users or for users using screen readers. The layout of the site is in semantic order following hierarchy to make it easy to follow.
 
-![main webpage screenshot](Develop/assets/images/horiseon%20main.png)
+![main webpage screenshot](docs/assets/images/horiseon%20main.png)
