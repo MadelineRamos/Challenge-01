@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>A11y Checks Page</title>
+        <link rel="stylesheet" href="styles.css" > 
+        <script type="text/javascript" src="./script.js"></script> 
+    </head>
+<body class="site-bg">
+    <header>
+        <h1 class="header-bg header-fg">
+          <img width=50px src="./images/check-circle.png" alt="circle checkmark"/>
+          <span> A11y Checks Page</span>
+        </h1>
+    </header>
+<main class="section-bg section-fg">
+    <nav class="nav-bg nav-fg">
+        <a href="products" >Products</a><br/>
+        <a href="pricing" >Pricing</a><br/>
+        <a href="support" >Support</a><br/>
+        <a href="about" >About Us</a><br/>
+    </nav>
+    <section class="bordered ">
+        <header><h2 class="header-bg header-fg" >Articles</h2></header>
+        <article class="bordered level3">
+            <header><h3>Our Solar System</h3></header>
+            <section id=planets-list class="bordered level4">
+                <header><h4>Planets</h4></header>
+                <ol>
+                    <li>Venus</li>
+                    <li>Mars</li>
+                    <li>Saturn</li>
+                </ol>
+            </section>
+        </article>
+    </section>
+  
+
+    <section id=signup class="bordered">
+        <header>
+            <h2 class="header-bg header-fg">Newsletter Signup Form</h2>
+        </header>        
+        <form >
+            <label>Name: <input type="text"></label>
+            <br/>
+            <label for="email">Email:</label>
+            <input type="email" title="email">
+            <br/>            
+            <label>Dept: <input type="text"></label>
+            <br/>
+            Phone: <input type="text" aria-label="phone">
+            <br/>
+            <button onclick="submitOnClick()" >Click to Sign-Up!</button>
+        </form>
+    </section>  
+
+    <section id=signup class="bordered">
+        <header>
+            <h2 class="header-bg header-fg">Action Buttons</h2>
+        </header> 
+        <div class="padded">
+            <!-- announcement: "save button" -->
+            <button onclick="btnClick()" class="x-btn" ><img src="./images/checkmark.png" alt="save"/></button>
+
+            <!-- announcement: "delete button" -->
+            <button onclick="btnClick()" class="x-btn" ><img src="./images/delete.png" alt="delete"/></button>
+
+            <!-- announcement: "submit button" -->
+            <br/>
+            <button onclick="btnClick()" class="txt-btn" >Submit</button>
+
+            <!-- announcement: "clear button" -->
+            <button onclick="btnClick()" class="txt-btn" title="Clear" >Clear</button>
+
+            <!-- announcement: "info button" -->
+            <br/>
+            <label id="infolabel" >Info:</label>
+            <button onclick="btnClick()" class="img-btn" ><img src="./images/info.png" alt="info"/></button>
+            <br/>
+
+        </div>
+    </section>
+</main>
+<footer class="footer-bg footer-fg">
+    <header class="header-bg header-fg">
+      <h2>Footer Links:</h2>
+    </header>
+    <a href="products" >Products</a>&nbsp;
+    <a href="pricing" >Pricing</a>&nbsp;
+    <a href="support">Support</a>;
+    <a href="about" >About Us</a>&nbsp; 
+    <br/> <br/>  
+</footer>
+
+</body>
+</html>
