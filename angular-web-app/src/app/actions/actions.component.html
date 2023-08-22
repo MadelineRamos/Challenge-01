@@ -1,0 +1,26 @@
+<section id=actions class="bordered">
+    <header>
+        <h2 class="header-bg header-fg">Action Buttons</h2>
+    </header> 
+    <div class="padded">
+        <!-- announcement: "save button" -->
+        <button (click)="btnClick()" class="x-btn" ><img src="../../assets/checkmark.png" alt="save" /></button>
+
+        <!-- announcement: "delete button" -->
+        <button (click)="btnClick()" class="x-btn" ><img src="../../assets/delete.png" alt="delete"/></button>
+
+        <!-- announcement: "submit button" -->
+        <br/>
+        <button (click)="btnClick()" class="txt-btn" >Submit</button>
+
+        <!-- announcement: "clear button" -->
+        <button (click)="btnClick()" class="txt-btn" title="Clear" >Clear</button>
+
+        <!-- announcement: "info button" -->
+        <br/>
+        <span id="infolabel" >Info:</span>
+        <button (click)="btnClick()" aria-labelledby="infolabel" class="img-btn" ><img src="../../assets/info.png" alt="info"/></button>
+        <br/>
+
+    </div>
+</section>
