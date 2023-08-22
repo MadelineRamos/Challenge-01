@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+h1,h2,h3,p, ul{
+    padding:0px;
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+p {
+    font-size: 2em;
+    border: 3px solid lightgrey;
+    width: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.bordered{
+    border: 1px solid black;    
+    width:fit-content;
+    padding: 5px;
+}
