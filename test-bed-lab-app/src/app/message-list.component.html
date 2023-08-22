@@ -1,0 +1,17 @@
+<div class="boxedout" >
+    <h2>Message List</h2>
+    <div class="boxedin" >
+        <ul>
+            <li *ngFor="let message of messages; let idx=index;"
+                [class]="(idx === selectedMessageId)?'selected':'not-selected'">
+                {{message}}
+            </li>
+        </ul>
+        <button (click)="onPrevious()">Previous</button>
+        <button (click)="onNext()">Next</button>
+    </div>
+    <app-message 
+      [title] = "'Selected Message'"
+      [message]="messages[selectedMessageId]"
+    ></app-message>
+</div>
