@@ -1,0 +1,29 @@
+#customers {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 10px;
+}
+
+
+#customers tr:hover {
+    background-color: rgb(192, 222, 231);
+    font-size: 18px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(106, 131, 139);
+    color: white;
+}
+
+td,
+th {
+    border: 1px solid #bebebe;
+    padding: 8px;
+}
+
+th {
+    text-align: center;
+}

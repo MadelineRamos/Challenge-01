@@ -1,0 +1,25 @@
+<h2>My Accounts</h2>
+
+<p>Salesperson: <strong>{{ salesPerson }}</strong></p>
+<p>Sales Total: {{ purchase_total | currency}}</p>
+
+<table id="customers">
+    <tr>
+        <ng-template [ngIf]="display"><th>Sales Person</th></ng-template>
+        <th>ID</th>
+        <th>FName</th>
+        <th>LName</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <ng-template [ngIf]="display"><th>Purchases</th></ng-template>
+    </tr>
+    <tr *ngFor="let customer of customers">
+        <ng-template [ngIf]="display"><td>{{ customer.salesperson }}</td></ng-template>
+        <td>{{ customer.id }}</td>
+        <td>{{ customer.first_name }}</td>
+        <td>{{ customer.last_name }}</td>
+        <td>{{ customer.email }}</td>
+        <td>{{ customer.phone }}</td>
+        <ng-template [ngIf]="display"><td>{{ customer.purchase_total | currency }}</td></ng-template>
+    </tr>
+</table>

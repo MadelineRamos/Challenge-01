@@ -1,0 +1,21 @@
+<div>
+    <h2>Account</h2>
+
+    <div *ngIf="isLoggedIn as true; else form">
+        <p>Currently logged in as a <strong>{{user}}</strong></p>
+        <button (click)="logout()">Logout</button>
+    </div>
+
+    <ng-template #form>
+        <p>Enter credentials here and click login:</p>
+        <form>
+            <label for="user">Username:</label>
+            <input  [(ngModel)]="username" type="text" name="user">
+
+            <label for="pass">Password:</label>
+            <input type="text" name="pass" [(ngModel)]="password">
+
+            <button class="loginBtn" (click)="getAuth()">Login</button>
+        </form>
+    </ng-template>
+</div>

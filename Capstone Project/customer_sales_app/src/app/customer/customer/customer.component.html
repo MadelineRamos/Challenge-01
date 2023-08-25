@@ -1,0 +1,8 @@
+<ng-template [ngIf]="display">
+    <ul>
+        <li><a [routerLink]="['customer-list']">Customer List</a></li>
+        <li><a [routerLink]="['my-accounts']">My Accounts</a></li>
+    </ul>
+</ng-template>
+
+<router-outlet></router-outlet>

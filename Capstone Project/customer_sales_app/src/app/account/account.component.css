@@ -1,0 +1,13 @@
+div {
+    align-items: center;
+}
+
+input {
+    display: block;
+}
+
+.loginBtn {
+    display: flex;
+    flex: wrap;
+    margin-top: 10px;
+}
